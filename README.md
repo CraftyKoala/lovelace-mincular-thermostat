@@ -4,7 +4,7 @@
 Mincular *from minimal & circular* Thermostat is a modern thermostat for home assistant.
 It supports the new dynamic themes which allow for a light and a dark mode.
 
-![alt text](https://github.com/CraftyKoala/lovelace-mincular-thermostat-card/blob/master/sample.png)
+![alt text](https://github.com/CraftyKoala/lovelace-mincular-thermostat/blob/master/sample.png)
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Maintenance][maintenance-shield]
@@ -135,7 +135,7 @@ It supports the new dynamic themes which allow for a light and a dark mode.
       attribute: away
 ```
 
-[license-shield]: https://img.shields.io/github/license/CraftyKoala/lovelace-mincular-thermostat.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/CraftyKoala/lovelace-mincular-thermostat?style=flat-square
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg?style=flat-square
 [releases-shield]: https://img.shields.io/github/v/release/CraftyKoala/lovelace-mincular-thermostat?style=flat-square
 [releases]: https://github.com/CraftyKoala/lovelace-mincular-thermostat/releases
