@@ -1,5 +1,7 @@
-# Dark Thermostat by [@ciotlosm](https://www.github.com/ciotlosm)
-
+# Modern Thermostat
+*Fork of Dark Thermostat by [@ciotlosm](https://www.github.com/ciotlosm)*
+  
+  
 A simple thermostat implemented in CSS based on [Nest Thermostat Control](https://codepen.io/dalhundal/pen/KpabZB/) by Dal Hundal
 [@dalhundal](https://codepen.io/dalhundal) on [CodePen](https://codepen.io)
 
