@@ -20,24 +20,24 @@ import {
 import './editor';
 import { ThermostatUserInterface } from './user-interface';
 
-import type { ThermostatDarkCardConfig } from './types';
+import type { MincularThermostatCardConfig } from './types';
 import { HVAC_HEATING, HVAC_COOLING, HVAC_IDLE, HVAC_OFF, GREEN_LEAF_MODES,  } from './const';
 import { localize } from './localize/localize';
 
 // This puts your card into the UI card picker dialog
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
-  type: 'thermostat-dark-card',
-  name: 'Dark Thermostat',
+  type: 'mincular-thermostat-card',
+  name: 'Mincular Thermostat',
   description: 'Thermostat with a round dial',
 });
 
-@customElement('thermostat-dark-card')
-export class ThermostatDarkCard extends ThermostatUserInterface {
+@customElement('mincular-thermostat-card')
+export class MincularThermostatCard extends ThermostatUserInterface {
   @property({ attribute: false }) public _hass!: HomeAssistant;
 
   public static async getConfigElement(): Promise<LovelaceCardEditor> {
-    return document.createElement('thermostat-dark-card-editor');
+    return document.createElement('mincular-thermostat-card-editor');
   }
 
   public static getStubConfig(): object {
@@ -99,11 +99,11 @@ export class ThermostatDarkCard extends ThermostatUserInterface {
     }
     this._hass = hass;
   }
-  @internalProperty() private config!: ThermostatDarkCardConfig;
+  @internalProperty() private config!: MincularThermostatCardConfig;
   @internalProperty() private _savedState: any;
 
   // https://lit-element.polymer-project.org/guide/properties#accessors-custom
-  public setConfig(config: ThermostatDarkCardConfig): void {
+  public setConfig(config: MincularThermostatCardConfig): void {
     // TODO Check for required fields and that they are of the proper format
     if (!config) {
       throw new Error(localize('common.invalid_configuration'));

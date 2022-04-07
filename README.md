@@ -1,7 +1,10 @@
-# Modern Thermostat
-*Fork of [Dark Thermostat](https://github.com/ciotlosm/lovelace-thermostat-dark-card) by [@ciotlosm](https://www.github.com/ciotlosm)*
+# Mincular Thermostat
+*Fork of [Dark Thermostat](https://github.com/ciotlosm/lovelace-mincular-thermostat-card) by [@ciotlosm](https://www.github.com/ciotlosm)*
 
-![alt text](https://github.com/ciotlosm/lovelace-thermostat-dark-card/blob/master/sample.png)
+Mincular *from minimal & circular* Thermostat is a modern thermostat for home assistant.
+It supports the new dynamic themes which allow for a light and a dark mode.
+
+![alt text](https://github.com/ciotlosm/lovelace-mincular-thermostat-card/blob/master/sample.png)
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Maintenance][maintenance-shield]
@@ -11,7 +14,7 @@
 
 | Name                 | Type    | Default      | Description                                                                                            |
 | -------------------- | ------- | ------------ | ------------------------------------------------------------------------------------------------------ |
-| type                 | string  | **Required** | `custom:thermostat-dark-card`                                                                          |
+| type                 | string  | **Required** | `custom:mincular-thermostat-card`                                                                          |
 | entity               | string  | **Required** | The entity id of climate entity. Example: `climate.hvac`                                               |
 | name                 | string  | optional     | Card title                                                                                             |
 | [hvac](#hvac-object) | object  | optional     | Allows mapping of custom states or using a custom sensor/attribute for state                           |
@@ -54,7 +57,7 @@
 ### Simple example
 
 ```yaml
-- type: custom:thermostat-dark-card
+- type: custom:mincular-thermostat-card
   title: Bedroom
   entity: climate.ecobee
 ```
@@ -62,7 +65,7 @@
 ### Example with custom hvac_states
 
 ```yaml
-- type: custom:thermostat-dark-card
+- type: custom:mincular-thermostat-card
   title: Bedroom
   entity: climate.hvac
   chevron_size: 100
@@ -77,7 +80,7 @@
 ### Example with custom hvac_sensor
 
 ```yaml
-- type: custom:thermostat-dark-card
+- type: custom:mincular-thermostat-card
   title: Bedroom
   entity: climate.nest
   chevron_size: 100
@@ -93,7 +96,7 @@
 ### Example with external ambient sensor
 
 ```yaml
-- type: custom:thermostat-dark-card
+- type: custom:mincular-thermostat-card
   title: Bedroom
   entity: climate.ecobee
   ambient_temperature: sensor.bedroom_temperature
@@ -102,7 +105,7 @@
 ### Custom attribute only
 
 ```yaml
-- type: custom:thermostat-dark-card
+- type: custom:mincular-thermostat-card
   title: Bedroom
   entity: climate.bedroom
   away:
@@ -112,7 +115,7 @@
 #### Sensor only
 
 ```yaml
-- type: custom:thermostat-dark-card
+- type: custom:mincular-thermostat-card
   title: Bedroom
   entity: climate.bedroom
   away:
@@ -123,7 +126,7 @@
 #### Sensor with attribute
 
 ```yaml
-- type: custom:thermostat-dark-card
+- type: custom:mincular-thermostat-card
   title: Bedroom
   entity: climate.bedroom
   away:
@@ -132,7 +135,7 @@
       attribute: away
 ```
 
-[license-shield]: https://img.shields.io/github/license/CraftyKoala/lovelace-modern-thermostat.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/CraftyKoala/lovelace-mincular-thermostat.svg?style=flat-square
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg?style=flat-square
-[releases-shield]: https://img.shields.io/github/v/release/CraftyKoala/lovelace-modern-thermostat?style=flat-square
-[releases]: https://github.com/CraftyKoala/lovelace-modern-thermostat/releases
+[releases-shield]: https://img.shields.io/github/v/release/CraftyKoala/lovelace-mincular-thermostat?style=flat-square
+[releases]: https://github.com/CraftyKoala/lovelace-mincular-thermostat/releases

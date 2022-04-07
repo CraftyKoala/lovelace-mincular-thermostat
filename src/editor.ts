@@ -12,15 +12,15 @@ import {
 } from 'lit-element';
 import { HomeAssistant, fireEvent, LovelaceCardEditor } from 'custom-card-helpers';
 
-import { ThermostatDarkCardConfig } from './types';
-@customElement('thermostat-dark-card-editor')
-export class ThermostatDarkCardEditor extends LitElement implements LovelaceCardEditor {
+import { MincularThermostatCardConfig } from './types';
+@customElement('mincular-thermostat-card-editor')
+export class MincularThermostatCardEditor extends LitElement implements LovelaceCardEditor {
   @property({ attribute: false }) public hass?: HomeAssistant;
-  @internalProperty() private _config?: ThermostatDarkCardConfig;
+  @internalProperty() private _config?: MincularThermostatCardConfig;
   @internalProperty() private _helpers?: any;
   private _initialized = false;
 
-  public setConfig(config: ThermostatDarkCardConfig): void {
+  public setConfig(config: MincularThermostatCardConfig): void {
     this._config = config;
 
     this.loadCardHelpers();

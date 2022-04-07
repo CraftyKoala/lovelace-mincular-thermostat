@@ -2,13 +2,13 @@ import { LovelaceCard, LovelaceCardConfig, LovelaceCardEditor } from 'custom-car
 
 declare global {
   interface HTMLElementTagNameMap {
-    'thermostat-dark-card-editor': LovelaceCardEditor;
+    'mincular-thermostat-card-editor': LovelaceCardEditor;
     'hui-error-card': LovelaceCard;
   }
 }
 
 // TODO Add your configuration elements here for type-checking
-export interface ThermostatDarkCardConfig extends LovelaceCardConfig {
+export interface MincularThermostatCardConfig extends LovelaceCardConfig {
   type: string;
   entity: string;
   show_warning?: boolean;

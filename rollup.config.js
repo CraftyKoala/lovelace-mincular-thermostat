@@ -32,7 +32,7 @@ const plugins = [
 
 export default [
   {
-    input: 'src/thermostat-dark-card.ts',
+    input: 'src/mincular-thermostat-card.ts',
     output: {
       dir: 'dist',
       format: 'es',
